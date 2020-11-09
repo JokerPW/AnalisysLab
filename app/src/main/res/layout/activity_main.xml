@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/fundo_meiazul">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Escolha a entrada"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textColor="@color/colortexto"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="24dp"
+        android:text="CÂMERA"
+        android:textSize="25sp"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
+        android:layout_marginHorizontal="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/button_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="24dp"
+        android:text="CARREGAR IMAGEM"
+        android:textSize="25dp"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="40dp"-->
+<!--        android:text="Escolha o Algorítmo"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/colortexto"-->
+<!--        android:shadowColor="@color/text_shadow"-->
+<!--        android:shadowDx="1"-->
+<!--        android:shadowDy="1"-->
+<!--        android:shadowRadius="2"-->
+<!--        />-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radioAlgoritmo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:checkedButton='@+id/radioColor'>-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioColor"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginHorizontal="40dp"-->
+<!--            android:text="Cor"-->
+<!--            android:textColor="@color/coloritens"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:shadowColor="@color/text_shadow"-->
+<!--            android:shadowDx="1"-->
+<!--            android:shadowDy="1"-->
+<!--            android:shadowRadius="2"-->
+<!--            />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioArea"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="Área"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/coloritens"-->
+<!--            android:layout_marginHorizontal="40dp"-->
+<!--            android:shadowColor="@color/text_shadow"-->
+<!--            android:shadowDx="1"-->
+<!--            android:shadowDy="1"-->
+<!--            android:shadowRadius="2"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+
+<!--    </RadioGroup>-->
+
+    <Button
+        android:id="@+id/button_config"
+        android:text="CONFIGURAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="24dp"
+        android:textSize="25sp"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
+        android:layout_marginHorizontal="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/button_db"
+        android:text="ESTATÍSTICAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="24dp"
+        android:textSize="25sp"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
+        android:layout_marginHorizontal="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"/>
+
+</LinearLayout>

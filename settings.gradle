@@ -1,0 +1,2 @@
+rootProject.name='ValidationLab'
+include ':app', ':OpenCV'

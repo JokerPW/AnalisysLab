@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/fundo_meiazul">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="procurar Imagem"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colortexto"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/imgvw"
+        android:layout_width="match_parent"
+        android:layout_height="150pt" />
+    //210 pt
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:text="CARREGAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
+        android:layout_marginHorizontal="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"/>
+
+<!--    android:layout_alignParentBottom="true"-->
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="match_parent"
+        android:layout_height="16pt"
+        android:text="-"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
+        android:layout_marginHorizontal="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/countBlobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="n"
+        android:textSize="20sp"
+        android:textColor="@color/colortexto"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginHorizontal="40dp"/>
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="match_parent"
+        android:layout_height="16pt"
+        android:text="+"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
+        android:layout_marginHorizontal="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
