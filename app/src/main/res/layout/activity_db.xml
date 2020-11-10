@@ -23,95 +23,31 @@
         android:shadowRadius="2"
         android:textStyle="bold"
                 />
-<!--    <TextView-->
-<!--        android:id="@+id/analise"-->
-<!--        android:text="Selecione a análise"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginHorizontal="40dp"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:textSize="20sp"-->
-<!--        android:shadowColor="@color/text_shadow"-->
-<!--        android:shadowDx="1"-->
-<!--        android:shadowDy="1"-->
-<!--        android:shadowRadius="2"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textAllCaps="true"-->
-<!--        android:background="@drawable/button"-->
-<!--        android:textColor="@color/buttontext"-->
-<!--        />-->
-<!--     <Spinner-->
-<!--        android:id="@+id/listaanalises"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginHorizontal="40dp"-->
-<!--        android:spinnerMode="dropdown"-->
-<!--         />-->
-
-
-    <EditText
-        android:id="@+id/addResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number" />
-
-
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="match_parent"
-        android:layout_height="15pt"
-        android:layout_alignParentBottom="true"
-        android:text="Adicionar"
-        android:textSize="15dp"
-        android:background="@drawable/button"
-        android:textColor="@color/buttontext"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5pt"
-        android:shadowColor="@color/text_shadow"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="2"
-        android:textStyle="bold"
-        />
-
-    <Button
-        android:id="@+id/btnCalculate"
-        android:layout_width="match_parent"
-        android:layout_height="15pt"
-        android:layout_alignParentBottom="true"
-        android:text="Calcular"
-        android:textSize="15dp"
-        android:background="@drawable/button"
-        android:textColor="@color/buttontext"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5pt"
-        android:shadowColor="@color/text_shadow"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="2"
-        android:textStyle="bold"
-        />
-
     <TextView
-        android:id="@+id/allNums"
-        android:text="Lista de análises"
+        android:id="@+id/analise"
+        android:text="Selecione a análise"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
         android:textStyle="bold"
-        android:textAlignment="textStart"
-        android:layout_gravity="start"
-        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
         />
+     <Spinner
+        android:id="@+id/lista_analises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:spinnerMode="dropdown"
+         />
 
     <TextView
     android:id="@+id/n"

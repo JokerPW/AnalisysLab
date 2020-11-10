@@ -20,22 +20,22 @@
         android:layout_width="match_parent"
         android:layout_height="344dp" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/textAnalysis"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:ems="10"-->
-<!--        android:inputType="textPersonName"-->
-<!--        android:text="ANÁLISE"-->
-<!--        android:textSize="20sp"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textAllCaps="true"-->
-<!--        android:textColor="@color/colortexto"-->
-<!--        android:shadowColor="@color/text_shadow"-->
-<!--        android:shadowDx="1"-->
-<!--        android:shadowDy="1"-->
-<!--        android:shadowRadius="2"-->
-<!--        android:textStyle="bold"/>-->
+    <EditText
+        android:id="@+id/text_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ANÁLISE"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colortexto"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/btnReturn"
@@ -54,22 +54,22 @@
         android:background="@drawable/button"
         android:textColor="@color/buttontext"
         />
-<!--    <Button-->
-<!--        android:id="@+id/btnSave"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="salvar"-->
-<!--        android:layout_marginHorizontal="40dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:textSize="20sp"-->
-<!--        android:shadowColor="@color/text_shadow"-->
-<!--        android:shadowDx="1"-->
-<!--        android:shadowDy="1"-->
-<!--        android:shadowRadius="2"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textAllCaps="true"-->
-<!--        android:background="@drawable/button"-->
-<!--        android:textColor="@color/buttontext"/>-->
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"/>
 
 </LinearLayout>
