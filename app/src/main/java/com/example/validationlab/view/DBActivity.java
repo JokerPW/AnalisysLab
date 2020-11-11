@@ -22,7 +22,6 @@ import java.util.List;
 public class DBActivity extends Activity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
 
     private ViewHolder mViewHolder = new ViewHolder();
-    private DatabaseAccess dba;
     private Stats stats;
     private boolean isLoading;
     private List<Integer> analysis;
@@ -32,7 +31,6 @@ public class DBActivity extends Activity implements View.OnClickListener, Adapte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_db);
 
-        this.dba = DatabaseAccess.getInstance(this);
         isLoading = true;
         analysis = new ArrayList<Integer>();
 
@@ -48,10 +46,10 @@ public class DBActivity extends Activity implements View.OnClickListener, Adapte
         this.mViewHolder.btnReturn.setOnClickListener(this);
 
 //create a list of items for the spinner.
-        String[] items = dba.getAnalysisGroups();
+        String[] items = DatabaseAccess.getInstance(this).getAnalysisGroups();
 //create an adapter to describe how the items are displayed, adapters are used in several places in android.
 //There are multiple variations of this, but this is the basic variant.
-        if(items != null && items.length > 0) {
+        if (items != null && items.length > 0) {
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
 //set the spinners adapter to the previously created one.
             this.mViewHolder.listaanalises.setAdapter(adapter);
@@ -87,9 +85,9 @@ public class DBActivity extends Activity implements View.OnClickListener, Adapte
     }
 
 
-    private void getAnalysisCulture (String group){
+    private void getAnalysisCulture(String group) {
         System.out.println("@@@@@@@@ ANALYSIS SELECTED");
-        List<Analysis> analysis = dba.getAnalysisGroup (group);
+        List<Analysis> analysis = DatabaseAccess.getInstance(this).getAnalysisGroup(group);
         double total = 0;
         int[] ntotal = new int[analysis.size()];
 
@@ -102,9 +100,9 @@ public class DBActivity extends Activity implements View.OnClickListener, Adapte
         }
         this.mViewHolder.resultadon.setText(Integer.toString(analysis.size()));
         this.mViewHolder.resultadomedia.setText(Double.toString(total / analysis.size()));
-        this.mViewHolder.resultadomediana.setText(Integer.toString(ntotal[ntotal.length/2]));
+        this.mViewHolder.resultadomediana.setText(Integer.toString(ntotal[ntotal.length / 2]));
 
-        Double std=Stats.of(ntotal).populationStandardDeviation();
+        Double std = Stats.of(ntotal).populationStandardDeviation();
         this.mViewHolder.resultadodesvio.setText(std.toString());
     }
 

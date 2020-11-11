@@ -34,7 +34,7 @@ public class DatabaseAccess extends SQLiteOpenHelper {
     }
 
     public static final String DATABASE_NAME = "db-analysis";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
 //    public AnalysisDAO analysisDao;
     private SQLiteDatabase mydatabase;

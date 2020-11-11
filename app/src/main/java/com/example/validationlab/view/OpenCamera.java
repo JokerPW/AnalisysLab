@@ -195,31 +195,35 @@ public class OpenCamera extends Activity implements View.OnClickListener, View.O
 
     @Override
     public void onClick(View view) {
-        Integer blobs = Integer.parseInt(this.mViewHolder.partial.getText().toString());
+        String value = this.mViewHolder.partial.getText().toString();
 
-        if(view.getId() == R.id.button_confirm){
-            String fileName = this.imgTools.saveCurrent(this.imgTools.rotate(this.imgTools.getImage(mRgba), 90));
-            if (fileName.length() <= 0) {
-                this.mViewHolder.partial.setText("Fail to save the file");
-                return;
-            }
+        // It checks if value is numeric so it could be confident in parsing it to integer
+        if (value.matches("-?(0|[1-9]\\d*)")) {
+            Integer blobs = Integer.parseInt(this.mViewHolder.partial.getText().toString());
 
-            Intent intent = new Intent(this, Results.class);
-            intent.putExtra(SPreferences.RESULT, blobs);
-            intent.putExtra(SPreferences.FINAL_IMG, fileName);
-            mOpenCvCameraView.disableView();
-            startActivity(intent);
-        } else {
-            if (view.getId() == R.id.buttonMinus) {
-                blobs--;
-                myAlgorithm.adjustCount(-1);
-            } else if (view.getId() == R.id.buttonPlus){
-                blobs++;
-                myAlgorithm.adjustCount(1);
+            if(view.getId() == R.id.button_confirm){
+                String fileName = this.imgTools.saveCurrent(this.imgTools.rotate(this.imgTools.getImage(mRgba), 90));
+                if (fileName.length() <= 0) {
+                    this.mViewHolder.partial.setText("Fail to save the file");
+                    return;
+                }
+
+                Intent intent = new Intent(this, Results.class);
+                intent.putExtra(SPreferences.RESULT, blobs);
+                intent.putExtra(SPreferences.FINAL_IMG, fileName);
+                mOpenCvCameraView.disableView();
+                startActivity(intent);
+            } else {
+                if (view.getId() == R.id.buttonMinus) {
+                    blobs--;
+                    myAlgorithm.adjustCount(-1);
+                } else if (view.getId() == R.id.buttonPlus){
+                    blobs++;
+                    myAlgorithm.adjustCount(1);
+                }
+                this.mViewHolder.partial.setText(blobs.toString());
             }
-            this.mViewHolder.partial.setText(blobs.toString());
         }
-
     }
 
     private static class ViewHolder {
