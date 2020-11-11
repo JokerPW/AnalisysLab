@@ -15,7 +15,7 @@ public class Analysis {
 
     // Create table SQL query
     public static final String CREATE_TABLE =
-            "CREATE TABLE " + TABLE_NAME + "("
+            "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + "("
                     + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                     + COLUMN_IMG_PATH + " VARCHAR(255),"
                     + COLUMN_NUM_CULTURES + " INTEGER,"

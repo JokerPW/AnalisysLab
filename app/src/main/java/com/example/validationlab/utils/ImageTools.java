@@ -87,10 +87,7 @@ public class ImageTools {
             fileOutputStream.flush();
             fileOutputStream.close();
         }
-        catch (FileNotFoundException e) {
-            System.out.println(e.toString());
-            return "";
-        } catch (IOException e) {
+        catch (Exception e) {
             System.out.println(e.toString());
             return "";
         }
