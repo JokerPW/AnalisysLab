@@ -1,11 +1,5 @@
 package com.example.validationlab.intelligence;
 
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.view.InputEvent;
-import android.view.MotionEvent;
-
-import org.opencv.android.Utils;
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
@@ -90,11 +84,11 @@ public class ColorDetector implements IAlgorithm {
             countBlobs = contours.size();
             Imgproc.drawContours(mat, contours, -1, CONTOUR_COLOR);
 
-            Mat colorLabel = mat.submat(4, 68, 4, 68);
-            colorLabel.setTo(mBlobColorRgba);
+//            Mat colorLabel = mat.submat(4, 68, 4, 68);
+//            colorLabel.setTo(mBlobColorRgba);
 
-            Mat spectrumLabel = mat.submat(4, 4 + mSpectrum.rows(), 70, 70 + mSpectrum.cols());
-            mSpectrum.copyTo(spectrumLabel);
+//            Mat spectrumLabel = mat.submat(4, 4 + mSpectrum.rows(), 70, 70 + mSpectrum.cols());
+//            mSpectrum.copyTo(spectrumLabel);
         }
     }
 

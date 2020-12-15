@@ -136,35 +136,35 @@
         android:layout_gravity="start"
         android:textSize="20sp"
         />
-    <TextView
-        android:id="@+id/moda"
-        android:text="Moda"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="5dp"
-        android:shadowColor="@color/text_shadow"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="2"
-        android:textStyle="bold"
-        android:textAlignment="textStart"
-        android:layout_gravity="start"
-        android:textSize="20sp"
-        />
-    <TextView
-        android:id="@+id/resultadomoda"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:shadowColor="@color/text_shadow"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="2"
-        android:textAlignment="textStart"
-        android:layout_gravity="start"
-        android:textSize="20sp"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/moda"-->
+<!--        android:text="Moda"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="40dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:shadowColor="@color/text_shadow"-->
+<!--        android:shadowDx="1"-->
+<!--        android:shadowDy="1"-->
+<!--        android:shadowRadius="2"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textAlignment="textStart"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:textSize="20sp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/resultadomoda"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="40dp"-->
+<!--        android:shadowColor="@color/text_shadow"-->
+<!--        android:shadowDx="1"-->
+<!--        android:shadowDy="1"-->
+<!--        android:shadowRadius="2"-->
+<!--        android:textAlignment="textStart"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:textSize="20sp"-->
+<!--        />-->
     <TextView
         android:id="@+id/desvio"
         android:text="Desvio padrão"

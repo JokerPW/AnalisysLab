@@ -40,7 +40,7 @@ public class DBActivity extends Activity implements View.OnClickListener, Adapte
         this.mViewHolder.resultadon = (TextView) findViewById(R.id.resultadon);
         this.mViewHolder.resultadomedia = (TextView) findViewById(R.id.resultadomedia);
         this.mViewHolder.resultadomediana = (TextView) findViewById(R.id.resultadomediana);
-        this.mViewHolder.resultadomoda = (TextView) findViewById(R.id.resultadomoda);
+        //this.mViewHolder.resultadomoda = (TextView) findViewById(R.id.resultadomoda);
         this.mViewHolder.resultadodesvio = (TextView) findViewById(R.id.resultadodesvio);
         this.mViewHolder.btnReturn = findViewById(R.id.btnReturn);
         this.mViewHolder.btnReturn.setOnClickListener(this);
