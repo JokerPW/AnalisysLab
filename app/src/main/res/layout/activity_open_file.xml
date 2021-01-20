@@ -10,8 +10,9 @@
     android:background="@drawable/fundo_meiazul">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="procurar Imagem"
         android:textSize="20sp"
         android:textAlignment="center"
@@ -27,14 +28,16 @@
     <ImageView
         android:id="@+id/imgvw"
         android:layout_width="match_parent"
-        android:layout_height="160pt" />
-    //210 pt
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+<!--    //210 pt-->
 
     <Button
         android:id="@+id/button_confirm"
         android:text="CARREGAR"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:padding="10dp"
         android:textSize="15dp"
         android:background="@drawable/button"
@@ -51,7 +54,8 @@
     <Button
         android:id="@+id/buttonMinus"
         android:layout_width="match_parent"
-        android:layout_height="10pt"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="-"
         android:background="@drawable/button"
         android:textColor="@color/buttontext"
@@ -67,7 +71,8 @@
     <TextView
         android:id="@+id/countBlobs"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="n"
         android:textSize="15sp"
         android:textColor="@color/colortexto"
@@ -83,7 +88,8 @@
     <Button
         android:id="@+id/buttonPlus"
         android:layout_width="match_parent"
-        android:layout_height="10pt"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="+"
         android:background="@drawable/button"
         android:textColor="@color/buttontext"

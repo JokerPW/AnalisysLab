@@ -13,7 +13,8 @@
     <Button
         android:id="@+id/button_confirm"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="40dp"
         android:background="@drawable/button"
@@ -29,17 +30,19 @@
 
     <org.opencv.android.JavaCameraView
         android:id="@+id/color_blob"
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:padding="24dp"
-        opencv:camera_id="any"
-        android:visibility="gone" />
-
+        android:visibility="gone"
+        opencv:camera_id="any" />
+///talvez tenha que deixar android:layout_height="wrap_content"
 
     <Button
         android:id="@+id/buttonMinus"
         android:layout_width="match_parent"
-        android:layout_height="16pt"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="-"
         android:background="@drawable/button"
         android:textColor="@color/buttontext"
@@ -54,7 +57,8 @@
     <TextView
         android:id="@+id/countBlobs"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="N"
         android:textSize="20sp"
         android:textColor="@color/colortexto"
@@ -71,7 +75,8 @@
     <Button
         android:id="@+id/buttonPlus"
         android:layout_width="match_parent"
-        android:layout_height="16pt"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="+"
         android:background="@drawable/button"
         android:textColor="@color/buttontext"

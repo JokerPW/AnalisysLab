@@ -9,13 +9,14 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Resultados"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="@color/colortexto"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -23,39 +24,149 @@
         android:shadowRadius="2"
         android:textStyle="bold"
                 />
+<!--    <TextView-->
+<!--        android:id="@+id/analise"-->
+<!--        android:text="Selecione a análise"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="2"-->
+<!--        android:layout_marginHorizontal="40dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:shadowColor="@color/text_shadow"-->
+<!--        android:shadowDx="1"-->
+<!--        android:shadowDy="1"-->
+<!--        android:shadowRadius="2"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:textColor="@color/buttontext"-->
+<!--        />-->
     <TextView
-        android:id="@+id/analise"
-        android:text="Selecione a análise"
+        android:id="@+id/d"
+        android:text="Insira a diluição"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="50dp"
-        android:textSize="20sp"
+        android:layout_marginTop="1dp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
         android:textStyle="bold"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:background="@drawable/button"
-        android:textColor="@color/buttontext"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="18sp"
         />
-     <Spinner
-        android:id="@+id/lista_analises"
+    <TextView
+        android:id="@+id/add_analisys"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_marginHorizontal="40dp"
-        android:spinnerMode="dropdown"
-         />
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/resultado"
+        android:text="Insira o resultado de cada análise"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="1dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/add_dilution"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginHorizontal="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2pt"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="2"
+        android:background="@drawable/button"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Adicionar"
+        android:textColor="@color/buttontext"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lista_resultados"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginHorizontal="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5pt"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="2"
+        android:background="@drawable/button"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Calcular"
+        android:textColor="@color/buttontext"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
     <TextView
     android:id="@+id/n"
     android:text="Número de análises"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
     android:layout_marginHorizontal="40dp"
-    android:layout_marginTop="5dp"
+    android:layout_marginTop="1dp"
     android:shadowColor="@color/text_shadow"
     android:shadowDx="1"
     android:shadowDy="1"
@@ -63,12 +174,13 @@
     android:textStyle="bold"
     android:textAlignment="textStart"
     android:layout_gravity="start"
-    android:textSize="20sp"
+    android:textSize="18sp"
     />
     <TextView
         android:id="@+id/resultadon"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_marginHorizontal="40dp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -82,9 +194,10 @@
         android:id="@+id/media"
         android:text="Média"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="1dp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
@@ -92,12 +205,13 @@
         android:textStyle="bold"
         android:textAlignment="textStart"
         android:layout_gravity="start"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
     <TextView
         android:id="@+id/resultadomedia"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_marginHorizontal="40dp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -111,7 +225,8 @@
         android:id="@+id/mediana"
         android:text="Mediana"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="5dp"
         android:shadowColor="@color/text_shadow"
@@ -121,12 +236,13 @@
         android:textStyle="bold"
         android:textAlignment="textStart"
         android:layout_gravity="start"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
     <TextView
         android:id="@+id/resultadomediana"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_marginHorizontal="40dp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -169,9 +285,10 @@
         android:id="@+id/desvio"
         android:text="Desvio padrão"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="1dp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
@@ -179,12 +296,13 @@
         android:textStyle="bold"
         android:textAlignment="textStart"
         android:layout_gravity="start"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
     <TextView
         android:id="@+id/resultadodesvio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_marginHorizontal="40dp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -199,7 +317,8 @@
     <Button
         android:id="@+id/btnReturn"
         android:layout_width="match_parent"
-        android:layout_height="15pt"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_alignParentBottom="true"
         android:text="Início"
         android:textSize="15dp"
