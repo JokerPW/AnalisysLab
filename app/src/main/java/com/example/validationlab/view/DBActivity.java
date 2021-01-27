@@ -44,6 +44,9 @@ public class DBActivity extends Activity implements View.OnClickListener {
         this.mViewHolder.resultadodesvio = (TextView) findViewById(R.id.resultadodesvio);
         this.mViewHolder.btnReturn = findViewById(R.id.btnReturn);
         this.mViewHolder.btnReturn.setOnClickListener(this);
+        this.mViewHolder.limpar = findViewById(R.id.limpar);
+        this.mViewHolder.limpar.setOnClickListener(this);
+
 
     }
 
@@ -68,6 +71,16 @@ public class DBActivity extends Activity implements View.OnClickListener {
 
         } else if (v.getId() == R.id.btnCalculate) {
             getAnalysisCulture();
+        }
+        else if (v.getId() == R.id.limpar) {
+            this.mViewHolder.add_analisys.setText("");
+            this.mViewHolder.add_dilution.setText("");
+            this.mViewHolder.resultadon.setText("");
+            this.mViewHolder.resultadomedia.setText("");
+            this.mViewHolder.resultadomediana.setText("");
+            this.mViewHolder.resultadodesvio.setText("");
+            this.mViewHolder.lista_resultados.setText("");
+            analysis = new ArrayList<Long>();
         }
     }
 
@@ -100,6 +113,8 @@ public class DBActivity extends Activity implements View.OnClickListener {
         Button btnAdd;
         Button btnCalculate;
         Button btnReturn;
+        Button limpar;
+
     }
 
 }

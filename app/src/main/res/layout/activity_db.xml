@@ -22,27 +22,8 @@
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
-        android:textStyle="bold"
-                />
-<!--    <TextView-->
-<!--        android:id="@+id/analise"-->
-<!--        android:text="Selecione a análise"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_weight="2"-->
-<!--        android:layout_marginHorizontal="40dp"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:textSize="20sp"-->
-<!--        android:shadowColor="@color/text_shadow"-->
-<!--        android:shadowDx="1"-->
-<!--        android:shadowDy="1"-->
-<!--        android:shadowRadius="2"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textAllCaps="true"-->
-<!--        android:background="@drawable/button"-->
-<!--        android:textColor="@color/buttontext"-->
-<!--        />-->
+        android:textStyle="bold"/>
+
     <TextView
         android:id="@+id/d"
         android:text="Insira a diluição"
@@ -60,8 +41,8 @@
         android:layout_gravity="start"
         android:textSize="18sp"
         />
-    <TextView
-        android:id="@+id/add_analisys"
+    <EditText
+        android:id="@+id/add_dilution"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -91,8 +72,8 @@
         android:layout_gravity="start"
         android:textSize="18sp"
         />
-    <TextView
-        android:id="@+id/add_dilution"
+    <EditText
+        android:id="@+id/add_analisys"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -114,7 +95,7 @@
         android:layout_marginBottom="2pt"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="2dp"
-        android:layout_weight="2"
+        android:layout_weight="1.5"
         android:background="@drawable/button"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -129,7 +110,7 @@
         android:id="@+id/lista_resultados"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1.5"
         android:layout_marginHorizontal="40dp"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -148,7 +129,7 @@
         android:layout_marginBottom="5pt"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="2dp"
-        android:layout_weight="2"
+        android:layout_weight="1.5"
         android:background="@drawable/button"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -318,10 +299,29 @@
         android:id="@+id/btnReturn"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1.5"
         android:layout_alignParentBottom="true"
         android:text="Início"
-        android:textSize="15dp"
+        android:textSize="12dp"
+        android:background="@drawable/button"
+        android:textColor="@color/buttontext"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5pt"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/limpar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_alignParentBottom="true"
+        android:text="Limpar"
+        android:textSize="12dp"
         android:background="@drawable/button"
         android:textColor="@color/buttontext"
         android:layout_marginHorizontal="40dp"

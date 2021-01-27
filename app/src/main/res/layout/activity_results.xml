@@ -7,7 +7,7 @@
     android:padding="8dp"
     android:background="@drawable/fundo_meiazul">
 
-    <EditText
+    <TextView
         android:id="@+id/text_analysis"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -24,7 +24,8 @@
         android:textColor="@color/colortexto"
         android:textSize="20sp"
         android:textStyle="bold" />
-    <TextView
+
+    <EditText
         android:id="@+id/count_blobs"
         android:layout_width="match_parent"
         android:layout_height="0dp"

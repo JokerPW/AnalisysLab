@@ -32,11 +32,11 @@
         android:id="@+id/color_blob"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="6"
         android:padding="24dp"
         android:visibility="gone"
         opencv:camera_id="any" />
-///talvez tenha que deixar android:layout_height="wrap_content"
+<!--talvez tenha que deixar android:layout_height="wrap_content"-->
 
     <Button
         android:id="@+id/buttonMinus"
