@@ -96,7 +96,7 @@ public class DBActivity extends Activity implements View.OnClickListener {
         this.mViewHolder.resultadomedia.setText(Double.toString(total / analysis.size()));
         this.mViewHolder.resultadomediana.setText(Long.toString(ntotal[ntotal.length / 2]));
 
-        Double std = Stats.of(ntotal).populationStandardDeviation();
+        Double std = Stats.of(ntotal).sampleStandardDeviation();
         this.mViewHolder.resultadodesvio.setText(std.toString());
     }
 

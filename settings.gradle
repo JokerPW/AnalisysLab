@@ -1,2 +1,2 @@
-rootProject.name='ValidationLab'
+rootProject.name='Soma'
 include ':app', ':OpenCV'

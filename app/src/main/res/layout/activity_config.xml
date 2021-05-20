@@ -14,14 +14,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Configure HSVA"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@color/colortexto"/>
+        android:textColor="@color/coloritens"/>
+    <TextView
+        android:text="Hue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="1dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="18sp"
+        />
 
     <EditText
         android:id="@+id/textH"
@@ -30,6 +46,22 @@
         android:ems="10"
         android:inputType="number"
         android:text="HUE" />
+    <TextView
+        android:text="Saturation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="1dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="18sp"
+        />
 
     <EditText
         android:id="@+id/textS"
@@ -38,7 +70,23 @@
         android:ems="10"
         android:inputType="number"
         android:text="SATURATION" />
+    <TextView
 
+        android:text="Value"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="1dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="18sp"
+        />
     <EditText
         android:id="@+id/textV"
         android:layout_width="match_parent"
@@ -46,6 +94,22 @@
         android:ems="10"
         android:inputType="number"
         android:text="VALUE" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Alpha"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/textA"
@@ -61,37 +125,37 @@
         android:layout_height="3dp"
         android:background="?android:attr/listDivider" />
 
-    <EditText
-        android:id="@+id/textR"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:text="RED" />
+<!--    <EditText-->
+<!--        android:id="@+id/textR"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="number"-->
+<!--        android:text="RED" />-->
 
-    <EditText
-        android:id="@+id/textG"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:text="GREEN" />
+<!--    <EditText-->
+<!--        android:id="@+id/textG"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="number"-->
+<!--        android:text="GREEN" />-->
 
-    <EditText
-        android:id="@+id/textB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:text="BLUE" />
+<!--    <EditText-->
+<!--        android:id="@+id/textB"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="number"-->
+<!--        android:text="BLUE" />-->
 
-    <EditText
-        android:id="@+id/textRGBA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:text="RGB ALPHA" />
+<!--    <EditText-->
+<!--        android:id="@+id/textRGBA"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="number"-->
+<!--        android:text="RGB ALPHA" />-->
 
     <Button
         android:id="@+id/button_save"

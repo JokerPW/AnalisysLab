@@ -31,8 +31,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
         this.mViewHolder.buttonFile = findViewById(R.id.button_file);
         this.mViewHolder.buttonFile.setOnClickListener(this);
-        this.mViewHolder.buttonCamera = findViewById(R.id.button_camera);
-        this.mViewHolder.buttonCamera.setOnClickListener(this);
+//        this.mViewHolder.buttonCamera = findViewById(R.id.button_camera);
+//        this.mViewHolder.buttonCamera.setOnClickListener(this);
         this.mViewHolder.buttonConfig = findViewById(R.id.button_config);
         this.mViewHolder.buttonConfig.setOnClickListener(this);
         this.mViewHolder.buttonDB = findViewById(R.id.button_db);
@@ -47,9 +47,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
     public void onClick(View view) {
         Intent intent;
 
-        if (view.getId() == R.id.button_camera) {
+        /*if (view.getId() == R.id.button_camera) {
             intent = new Intent(this, OpenCamera.class);
-        } else if (view.getId() == R.id.button_file) {
+        } else*/ if (view.getId() == R.id.button_file) {
             intent = new Intent(this, OpenFile.class);
         } else if (view.getId() == R.id.button_config) {
             intent = new Intent(this, ConfigActivity.class);
@@ -65,7 +65,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
 
     private static class ViewHolder {
-        Button buttonCamera;
+//        Button buttonCamera;
         Button buttonFile;
         Button buttonConfig;
         Button buttonDB;

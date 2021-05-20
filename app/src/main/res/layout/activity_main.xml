@@ -20,7 +20,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="25sp"
-        android:textColor="@color/colortexto"
+        android:textColor="@color/coloritens"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
@@ -29,23 +29,23 @@
         android:gravity="center"
         />
 
-    <Button
-        android:id="@+id/button_camera"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="40dp"
-        android:layout_weight="2"
-        android:background="@drawable/button"
-        android:padding="24dp"
-        android:shadowColor="@color/text_shadow"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="2"
-        android:text="CÂMERA"
-        android:textColor="@color/buttontext"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+<!--    <Button-->
+<!--        android:id="@+id/button_camera"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginHorizontal="40dp"-->
+<!--        android:layout_weight="2"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:padding="24dp"-->
+<!--        android:shadowColor="@color/text_shadow"-->
+<!--        android:shadowDx="1"-->
+<!--        android:shadowDy="1"-->
+<!--        android:shadowRadius="2"-->
+<!--        android:text="CÂMERA"-->
+<!--        android:textColor="@color/buttontext"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold" />-->
 
     <Button
         android:id="@+id/button_file"

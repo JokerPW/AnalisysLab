@@ -40,15 +40,15 @@ public class ConfigActivity extends Activity implements View.OnClickListener {
         this.mViewHolder.textV.setText(String.valueOf(sp.getVALUE_V()));
         this.mViewHolder.textA.setText(String.valueOf(sp.getVALUE_A()));
 
-        this.mViewHolder.textR = findViewById(R.id.textR);
-        this.mViewHolder.textG = findViewById(R.id.textG);
-        this.mViewHolder.textB = findViewById(R.id.textB);
-        this.mViewHolder.textRGBA = findViewById(R.id.textRGBA);
-
-        this.mViewHolder.textR.setText(String.valueOf(sp.getVALUE_R()));
-        this.mViewHolder.textG.setText(String.valueOf(sp.getVALUE_G()));
-        this.mViewHolder.textB.setText(String.valueOf(sp.getVALUE_B()));
-        this.mViewHolder.textRGBA.setText(String.valueOf(sp.getVALUE_RGB_A()));
+//        this.mViewHolder.textR = findViewById(R.id.textR);
+//        this.mViewHolder.textG = findViewById(R.id.textG);
+//        this.mViewHolder.textB = findViewById(R.id.textB);
+//        this.mViewHolder.textRGBA = findViewById(R.id.textRGBA);
+//
+//        this.mViewHolder.textR.setText(String.valueOf(sp.getVALUE_R()));
+//        this.mViewHolder.textG.setText(String.valueOf(sp.getVALUE_G()));
+//        this.mViewHolder.textB.setText(String.valueOf(sp.getVALUE_B()));
+//        this.mViewHolder.textRGBA.setText(String.valueOf(sp.getVALUE_RGB_A()));
 
     }
 
@@ -60,10 +60,10 @@ public class ConfigActivity extends Activity implements View.OnClickListener {
             sp.setVALUE_V(Long.parseLong(this.mViewHolder.textV.getText().toString()));
             sp.setVALUE_A(Long.parseLong(this.mViewHolder.textA.getText().toString()));
 
-            sp.setVALUE_R(Long.parseLong(this.mViewHolder.textR.getText().toString()));
-            sp.setVALUE_G(Long.parseLong(this.mViewHolder.textG.getText().toString()));
-            sp.setVALUE_B(Long.parseLong(this.mViewHolder.textB.getText().toString()));
-            sp.setVALUE_RGB_A(Long.parseLong(this.mViewHolder.textRGBA.getText().toString()));
+//            sp.setVALUE_R(Long.parseLong(this.mViewHolder.textR.getText().toString()));
+//            sp.setVALUE_G(Long.parseLong(this.mViewHolder.textG.getText().toString()));
+//            sp.setVALUE_B(Long.parseLong(this.mViewHolder.textB.getText().toString()));
+//            sp.setVALUE_RGB_A(Long.parseLong(this.mViewHolder.textRGBA.getText().toString()));
         }
 
         Intent intent = new Intent(this, MainActivity.class);
@@ -78,10 +78,10 @@ public class ConfigActivity extends Activity implements View.OnClickListener {
         EditText textV;
         EditText textA;
 
-        EditText textR;
-        EditText textG;
-        EditText textB;
-        EditText textRGBA;
+//        EditText textR;
+//        EditText textG;
+//        EditText textB;
+//        EditText textRGBA;
     }
 
 }
